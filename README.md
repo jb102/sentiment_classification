@@ -1,6 +1,9 @@
 # sentiment_classification
 Sentiment classification of Tweets using SVM (implemented in Sci-Kit Learn) and Naive Bayesian classifier (implemented from scratch). Three sentiment categories: positive, negative and neutral.
 
+# Dataset
+The dataset used for this machine learning project is the SemEval set, which provides a scraped set of Tweets labelled by sentiment as "positive", "neutal" and "negative". The training/development/test split are contained in the files in the semeval-tweets folder.
+
 # Preprocessing
 
 The preprocessing of tweets in the training and testing sets involved removing standard
