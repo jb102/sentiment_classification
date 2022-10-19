@@ -15,7 +15,7 @@ The tokens (split on whitespace) are lemmatised using the Python NLTK library's 
 
 # SVM
 
-The SVM classifier was implemented using Sci-Kit Learn’s SVM model. The data wasvectorised using the TfidfVectorizer class.
+The SVM classifier was implemented using Sci-Kit Learn’s SVM model. The data was vectorised using the TfidfVectorizer class.
 Shown below are the results from running this model on the same test sets.
 -----------------------------------
 | Test set             | F1 Score |
@@ -28,3 +28,5 @@ Shown below are the results from running this model on the same test sets.
 -----------------------------------
 |twitter-test3.txt     |0.495     |
 -----------------------------------
+
+
