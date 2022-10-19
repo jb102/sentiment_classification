@@ -23,4 +23,25 @@ Shown below are the results from running this model on the same test sets (Test 
 - twitter-test2.txt: 0.522
 - twitter-test3.txt: 0.495
 
+# Naive Bayes Classifier
 
+The Naive Bayes classifier was implemented initially on a bag-of-words basis, using
+the total counts of words in tweets of a given classification to train the log-likelihood
+probabilities. The macro-averaged F1 score accuracy of this on each of the test sets
+given is shown below:
+
+- twitter-dev-data.txt: 0.593
+- twitter-test1.txt: 0.489
+- twitter-test2.txt: 0.468
+- twitter-test3.txt: 0.483
+
+The MPQA Subjectivity Lexicon was added, which groups words into sentiment categories like ’positive’,
+’strongly positive’, ’neutral’. The classifier was adapted to implement this information,
+and treat all words which appeared in the training and test data as a single token if they
+fell into one of the classes. This improved performance significantly for all of the test
+sets except for twitter-dev-data.txt, which saw a significant loss in accuracy, shown below:
+
+- twitter-dev-data.txt: 0.562
+- twitter-test1.txt: 0.512
+- twitter-test2.txt: 0.506
+- twitter-test3.txt: 0.508
